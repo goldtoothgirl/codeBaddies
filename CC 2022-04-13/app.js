@@ -15,12 +15,15 @@
 //P:
 //Make a function that take in aarry
 function doubled(arr){
-    return arr.map(element=>element*2)
-
+    if( arr.length === 0){
+        console.log('Array is invalid')
+    }else{
+        return arr.map(element=>element*2)
+    }
 }
 doubled([1,2,3])
 console.log(doubled([2,3,4]),[4,6,8])
-
+console.log(doubled([]))
 
 //function double(arr){
     // return arr.map(function arrow(e){
